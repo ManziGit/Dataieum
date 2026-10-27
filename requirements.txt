@@ -6,3 +6,5 @@ xlrd==2.0.2
 psycopg[binary]==3.3.6
 opentelemetry-sdk==1.45.0
 httpx==0.28.1
+numpy==2.2.6
+faiss-cpu==1.12.0

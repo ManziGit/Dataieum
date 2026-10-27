@@ -1198,9 +1198,85 @@
     "requirements.txt": {
       "service": "atlas",
       "original_sha256": "4be66458c5862c4ffa954be38fb4ca29d14c57b30c37b65afafa6328b0848f62",
-      "public_sha256": "4be66458c5862c4ffa954be38fb4ca29d14c57b30c37b65afafa6328b0848f62",
+      "public_sha256": "401ca43bf591083f7714acc4b8f745ec428928df453316a60b194afe1246505c",
       "original_bytes": 142,
-      "public_bytes": 142,
+      "public_bytes": 173,
+      "public_export_change": "Restored numpy==2.2.6 and faiss-cpu==1.12.0 from the wanted vector image requirements.",
+      "dependency_source": {
+        "repository": "https://github.com/ManziGit/wanted",
+        "revision": "9e6894b8296f79782aae1e47c8025d0ad8fad8dd",
+        "path": "Dockerfile",
+        "stage": "vector"
+      }
+    },
+    "operations/refresh-sources.json": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "9e6894b8296f79782aae1e47c8025d0ad8fad8dd",
+      "source_path": "operations/refresh-sources.json",
+      "original_sha256": "cf4b7560bd9d400efde3b69305fb06b4a5fb6d83ddfbda744bfa152e48b4a36b",
+      "public_sha256": "cf4b7560bd9d400efde3b69305fb06b4a5fb6d83ddfbda744bfa152e48b4a36b",
+      "original_bytes": 11222,
+      "public_bytes": 11222,
+      "public_export_change": null
+    },
+    "operations/tests/test_index_lookup.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "9e6894b8296f79782aae1e47c8025d0ad8fad8dd",
+      "source_path": "operations/tests/test_index_lookup.py",
+      "original_sha256": "9246ad18c39ded180f08329e3f42f5698457a2cb0b71e86e6a2c1f7b259d79dd",
+      "public_sha256": "9246ad18c39ded180f08329e3f42f5698457a2cb0b71e86e6a2c1f7b259d79dd",
+      "original_bytes": 2324,
+      "public_bytes": 2324,
+      "public_export_change": null
+    },
+    "operations/tests/test_refresh.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "9e6894b8296f79782aae1e47c8025d0ad8fad8dd",
+      "source_path": "operations/tests/test_refresh.py",
+      "original_sha256": "69e7c325600051ab05c1d9018459fb47053a4962d8f77d038972dcb1d1cb3597",
+      "public_sha256": "69e7c325600051ab05c1d9018459fb47053a4962d8f77d038972dcb1d1cb3597",
+      "original_bytes": 16085,
+      "public_bytes": 16085,
+      "public_export_change": null
+    },
+    "operations/tests/test_refresh_freeze.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "9e6894b8296f79782aae1e47c8025d0ad8fad8dd",
+      "source_path": "operations/tests/test_refresh_freeze.py",
+      "original_sha256": "4069ce7568c1ac21c988e9424daa3a215265a67025f9421ff63117e3b10e843c",
+      "public_sha256": "4069ce7568c1ac21c988e9424daa3a215265a67025f9421ff63117e3b10e843c",
+      "original_bytes": 2339,
+      "public_bytes": 2339,
+      "public_export_change": null
+    },
+    "operations/tests/test_refresh_quality.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "9e6894b8296f79782aae1e47c8025d0ad8fad8dd",
+      "source_path": "operations/tests/test_refresh_quality.py",
+      "original_sha256": "a0a4795e88a59a4c51a09b8296e72b98daf1144cea2d15222447a4e7a21506ef",
+      "public_sha256": "a0a4795e88a59a4c51a09b8296e72b98daf1144cea2d15222447a4e7a21506ef",
+      "original_bytes": 14049,
+      "public_bytes": 14049,
+      "public_export_change": null
+    },
+    "operations/tests/test_refresh_publish.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "9e6894b8296f79782aae1e47c8025d0ad8fad8dd",
+      "source_path": "operations/tests/test_refresh_publish.py",
+      "original_sha256": "66afdf45f468eaca9df491d72e845e43345d157e814827b04622f5c350483ba9",
+      "public_sha256": "66afdf45f468eaca9df491d72e845e43345d157e814827b04622f5c350483ba9",
+      "original_bytes": 13461,
+      "public_bytes": 13461,
+      "public_export_change": null
+    },
+    "operations/tests/test_refresh_maintenance.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "9e6894b8296f79782aae1e47c8025d0ad8fad8dd",
+      "source_path": "operations/tests/test_refresh_maintenance.py",
+      "original_sha256": "4e703f0d6650b0a5fc444106ad93b231741c71bd90104bd46ed47cb008e3dc11",
+      "public_sha256": "4e703f0d6650b0a5fc444106ad93b231741c71bd90104bd46ed47cb008e3dc11",
+      "original_bytes": 4191,
+      "public_bytes": 4191,
       "public_export_change": null
     }
   }

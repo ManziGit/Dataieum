@@ -1,0 +1,503 @@
+{
+  "timezone": "Asia/Seoul",
+  "sites_per_day": 8,
+  "parallel_sources": 3,
+  "daily_embedding_usd": "0.10",
+  "embedding_transport": "batch",
+  "sources": [
+    {
+      "id": "korea",
+      "name": "공공데이터포털",
+      "family": "html_api",
+      "hosts": [
+        "www.data.go.kr",
+        "data.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "seoul",
+      "name": "서울 열린데이터광장",
+      "family": "html_api",
+      "hosts": [
+        "data.seoul.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "kosis",
+      "name": "KOSIS 국가통계포털",
+      "family": "bulk",
+      "hosts": [
+        "kosis.kr",
+        "stat.kosis.kr"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 1,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "kma",
+      "name": "기상자료개방포털",
+      "family": "html_api",
+      "hosts": [
+        "data.kma.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "singapore",
+      "name": "data.gov.sg",
+      "family": "cursor",
+      "hosts": [
+        "api-production.data.gov.sg",
+        "data.gov.sg"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "census",
+      "name": "U.S. Census Bureau",
+      "family": "bulk",
+      "hosts": [
+        "api.census.gov"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 1,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "worldbank",
+      "name": "World Bank Open Data",
+      "family": "bulk",
+      "hosts": [
+        "api.worldbank.org"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 1,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "eurostat",
+      "name": "Eurostat",
+      "family": "bulk",
+      "hosts": [
+        "ec.europa.eu"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 1,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "uk",
+      "name": "data.gov.uk",
+      "family": "ckan",
+      "hosts": [
+        "ckan.publishing.service.gov.uk",
+        "www.data.gov.uk",
+        "data.gov.uk"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "eu",
+      "name": "data.europa.eu",
+      "family": "cursor",
+      "hosts": [
+        "data.europa.eu"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "us",
+      "name": "Data.gov",
+      "family": "cursor",
+      "hosts": [
+        "catalog.data.gov"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "canada",
+      "name": "Open Government Canada",
+      "family": "ckan",
+      "hosts": [
+        "open.canada.ca"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "gyeonggi",
+      "name": "경기데이터드림",
+      "family": "html_api",
+      "hosts": [
+        "data.gg.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "busan",
+      "name": "부산 Big-데이터웨이브",
+      "family": "html_api",
+      "hosts": [
+        "data.busan.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "daegu",
+      "name": "대구 D-데이터허브",
+      "family": "html_api",
+      "hosts": [
+        "data.daegu.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "incheon",
+      "name": "인천데이터포털",
+      "family": "html_api",
+      "hosts": [
+        "data.incheon.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "daejeon",
+      "name": "대전 빅데이터 오픈랩",
+      "family": "html_api",
+      "hosts": [
+        "openlab.daejeon.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "chungbuk",
+      "name": "충청북도 빅데이터 허브",
+      "family": "html_api",
+      "hosts": [
+        "data.chungbuk.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "jeju",
+      "name": "제주데이터허브",
+      "family": "html_api",
+      "hosts": [
+        "jejudatahub.net",
+        "www.jejudatahub.net"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "ecos",
+      "name": "한국은행 ECOS",
+      "family": "bulk",
+      "hosts": [
+        "ecos.bok.or.kr"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 1,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "sgis",
+      "name": "SGIS 통계지리정보서비스",
+      "family": "html_api",
+      "hosts": [
+        "sgis.mods.go.kr",
+        "sgis.kostat.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "hira",
+      "name": "보건의료데이터개방시스템",
+      "family": "html_api",
+      "hosts": [
+        "opendata.hira.or.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "vworld",
+      "name": "브이월드",
+      "family": "html_api",
+      "hosts": [
+        "www.vworld.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "culture",
+      "name": "문화데이터광장",
+      "family": "html_api",
+      "hosts": [
+        "www.culture.go.kr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "france",
+      "name": "data.gouv.fr",
+      "family": "udata",
+      "hosts": [
+        "www.data.gouv.fr",
+        "data.gouv.fr"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "switzerland",
+      "name": "opendata.swiss",
+      "family": "ckan",
+      "hosts": [
+        "ckan.opendata.swiss",
+        "opendata.swiss"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "australia",
+      "name": "Data.gov.au",
+      "family": "ckan",
+      "hosts": [
+        "data.gov.au"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "ireland",
+      "name": "data.gov.ie",
+      "family": "ckan",
+      "hosts": [
+        "data.gov.ie"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "austria",
+      "name": "data.gv.at",
+      "family": "cursor",
+      "hosts": [
+        "www.data.gv.at",
+        "data.gv.at"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "finland",
+      "name": "Suomi.fi Open Data",
+      "family": "ckan",
+      "hosts": [
+        "avoindata.suomi.fi",
+        "www.avoindata.fi",
+        "avoindata.fi"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "germany",
+      "name": "GovData",
+      "family": "ckan",
+      "hosts": [
+        "www.govdata.de",
+        "govdata.de"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "netherlands",
+      "name": "Data overheid",
+      "family": "ckan",
+      "hosts": [
+        "data.overheid.nl"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "spain",
+      "name": "datos.gob.es",
+      "family": "html_api",
+      "hosts": [
+        "datos.gob.es"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "portugal",
+      "name": "dados.gov.pt",
+      "family": "udata",
+      "hosts": [
+        "dados.gov.pt"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "japan",
+      "name": "e-Gov 데이터 포털",
+      "family": "ckan",
+      "hosts": [
+        "data.e-gov.go.jp"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "taiwan",
+      "name": "대만 정부 데이터 포털",
+      "family": "html_api",
+      "hosts": [
+        "data.gov.tw"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.8,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "hongkong",
+      "name": "DATA.GOV.HK",
+      "family": "ckan",
+      "hosts": [
+        "data.gov.hk"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "newzealand",
+      "name": "data.govt.nz",
+      "family": "ckan",
+      "hosts": [
+        "catalogue.data.govt.nz",
+        "data.govt.nz"
+      ],
+      "parallel_requests": 2,
+      "minimum_interval_seconds": 0.5,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "oecd",
+      "name": "OECD Data",
+      "family": "bulk",
+      "hosts": [
+        "sdmx.oecd.org"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 1,
+      "timeout_seconds": 30,
+      "attempts": 3
+    },
+    {
+      "id": "who",
+      "name": "WHO Global Health Observatory",
+      "family": "bulk",
+      "hosts": [
+        "ghoapi.azureedge.net"
+      ],
+      "parallel_requests": 1,
+      "minimum_interval_seconds": 1,
+      "timeout_seconds": 30,
+      "attempts": 3
+    }
+  ]
+}
