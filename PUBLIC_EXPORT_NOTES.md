@@ -6,6 +6,7 @@
 - `discovery_harness/ontology_asset_models.json`: 검토 근거에 남아 있는 개인 PC 작업 경로를 프로젝트 상대경로로 변경. 원래 파일명·날짜·검토 내용은 유지했습니다. 해당 검토 입력 파일 전체가 이 사본에 포함되는 것은 아닙니다.
 - `THIRD_PARTY_NOTICES.md`: 빌드 결과물에 포함된 React·React DOM·Scheduler의 버전과 MIT 고지 추가.
 - `README.md`, `.gitignore`, 이 문서와 `SOURCE_MANIFEST.json`: 공개 범위·제약·파일 검증을 위한 안내 추가.
+- `docs/images/`: README에 쓴 운영 화면 두 장. 대회 발표자료에 실린 화면을 그대로 옮겼습니다.
 
 `SOURCE_MANIFEST.json`은 추출 원본과 공개 파일의 SHA-256을 각각 기록합니다. 기존 Git 이력, 개발 날짜 및 버전 식별자를 다시 작성하지 않았습니다. 운영 서비스·원래 프로젝트에는 이 공개 사본의 정리 내용을 적용하지 않았습니다.
 
