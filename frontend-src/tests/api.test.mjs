@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {api} from '../src/api.ts';
+let release;const paths=[];
+globalThis.fetch=async path=>{paths.push(path);if(path==='/api/graph')await new Promise(resolve=>release=resolve);return {ok:true,status:200,json:async()=>({path})};};
+const graph=api('/api/graph'),count=api('/api/catalog/count'),page=api('/api/catalog/page'),compare=api('/api/compare?ids=one');
+const abort=new AbortController(),cancelled=api('/api/datasets/cancelled',{signal:abort.signal});abort.abort();
+await assert.rejects(cancelled,{name:'AbortError'});assert.deepEqual(paths,['/api/graph']);release();
+await Promise.all([graph,count,page,compare]);
+assert.deepEqual(paths,['/api/graph','/api/compare?ids=one','/api/catalog/page','/api/catalog/count']);
+console.log('Request ordering and cancellation passed.');

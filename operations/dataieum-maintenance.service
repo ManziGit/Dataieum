@@ -1,0 +1,19 @@
+[Unit]
+Description=Dataieum 04:00 KST incremental publication and interrupted maintenance recovery
+Requires=docker.service
+After=docker.service network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=3600
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+ExecStart=/opt/wanted/postgres/venv/bin/python /opt/wanted/operations/refresh_maintenance.py
+ExecStopPost=/opt/wanted/postgres/venv/bin/python /opt/wanted/operations/refresh_maintenance.py stop
+TimeoutStartSec=infinity
+TimeoutStopSec=60
+Restart=on-failure
+RestartSec=60
+StandardOutput=journal
+StandardError=journal
+UMask=0077

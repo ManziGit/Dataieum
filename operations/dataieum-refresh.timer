@@ -1,0 +1,12 @@
+[Unit]
+Description=Settle Batch hourly; collect one persisted group of eight per Korean day
+
+[Timer]
+OnCalendar=*-*-* *:05:00
+OnBootSec=2min
+Persistent=true
+RandomizedDelaySec=30
+Unit=dataieum-refresh.service
+
+[Install]
+WantedBy=timers.target

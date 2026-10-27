@@ -1,0 +1,15 @@
+[Unit]
+Description=Dataieum persistent eight-source rotation and capped embedding Batch
+Requires=docker.service
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/wanted/operations/refresh_run.py
+ExecStopPost=/usr/bin/python3 /opt/wanted/operations/refresh_run.py stop
+TimeoutStartSec=infinity
+TimeoutStopSec=45
+StandardOutput=journal
+StandardError=journal
+UMask=0077

@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily 04:00 Asia/Seoul publication; recover interrupted maintenance after boot
+
+[Timer]
+OnCalendar=*-*-* 19:00:00 UTC
+OnBootSec=2min
+Persistent=true
+Unit=dataieum-maintenance.service
+
+[Install]
+WantedBy=timers.target

@@ -1278,6 +1278,486 @@
       "original_bytes": 4191,
       "public_bytes": 4191,
       "public_export_change": null
+    },
+    ".dockerignore": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": ".dockerignore",
+      "original_sha256": "c7e4a2b16a5ea403800eb8106f665207f6deab757a157d9b6a3b7e4ce8a3ec7e",
+      "public_sha256": "2eedcf68687b8ab11797e05cce28b173013fc1b75b7cee9cdfb75ee628fe8450",
+      "original_bytes": 309,
+      "public_bytes": 410,
+      "public_export_change": "Allow-list follows this repository's layout: discovery_harness/, experiments/, frontend-src/, requirements.txt and classification_batch.py instead of backend/ and frontend/."
+    },
+    "Dockerfile": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "Dockerfile",
+      "original_sha256": "4faa7fc54f852338ed1112398329edafde36f01728dde8f416a70ffeab3109aa",
+      "public_sha256": "0862fbbea56c89de8f6418d8f98053f35941cb19e1bc1ae4e1a358033ed331e3",
+      "original_bytes": 2242,
+      "public_bytes": 2222,
+      "public_export_change": "COPY sources follow this repository's flat layout (no backend/ prefix; frontend source in frontend-src/). Build steps are unchanged; this repository's requirements.txt already lists numpy and faiss-cpu, so the atlas stage installs them as well."
+    },
+    "frontend-src/index.html": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/index.html",
+      "original_sha256": "602db6c36276e4b9de0a575bf8b12360ff89cb6d0d9f04c943655889ae967558",
+      "public_sha256": "602db6c36276e4b9de0a575bf8b12360ff89cb6d0d9f04c943655889ae967558",
+      "original_bytes": 384,
+      "public_bytes": 384,
+      "public_export_change": null
+    },
+    "frontend-src/package-lock.json": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/package-lock.json",
+      "original_sha256": "933e5cec2a168651a90cf394ceb894060d559f3511c92fd8cd991740f85bc346",
+      "public_sha256": "933e5cec2a168651a90cf394ceb894060d559f3511c92fd8cd991740f85bc346",
+      "original_bytes": 40440,
+      "public_bytes": 40440,
+      "public_export_change": null
+    },
+    "frontend-src/package.json": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/package.json",
+      "original_sha256": "1e838b454cc010a437a3cefde785455f5aa0c3ece9ad6bcac6ce4e8b7c53dec3",
+      "public_sha256": "1e838b454cc010a437a3cefde785455f5aa0c3ece9ad6bcac6ce4e8b7c53dec3",
+      "original_bytes": 361,
+      "public_bytes": 361,
+      "public_export_change": null
+    },
+    "frontend-src/src/App.tsx": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/App.tsx",
+      "original_sha256": "e22094f6eacd8843ad9a71371dc8d428bdc1ccff0aa22a16f25d192d6ae8daa3",
+      "public_sha256": "e22094f6eacd8843ad9a71371dc8d428bdc1ccff0aa22a16f25d192d6ae8daa3",
+      "original_bytes": 18544,
+      "public_bytes": 18544,
+      "public_export_change": null
+    },
+    "frontend-src/src/ChatDock.tsx": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/ChatDock.tsx",
+      "original_sha256": "4227aa95806422b7c80810a71c5d2abc7e7c130b49d4d3d0fb38d2fe6d5a992a",
+      "public_sha256": "4227aa95806422b7c80810a71c5d2abc7e7c130b49d4d3d0fb38d2fe6d5a992a",
+      "original_bytes": 5777,
+      "public_bytes": 5777,
+      "public_export_change": null
+    },
+    "frontend-src/src/Collections.tsx": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/Collections.tsx",
+      "original_sha256": "1d62b0e79fb804aec1da3075607f7c8246899186a74163f5e08b93a217d35496",
+      "public_sha256": "1d62b0e79fb804aec1da3075607f7c8246899186a74163f5e08b93a217d35496",
+      "original_bytes": 2736,
+      "public_bytes": 2736,
+      "public_export_change": null
+    },
+    "frontend-src/src/Compare.tsx": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/Compare.tsx",
+      "original_sha256": "878093de576556fc239b1b301d492532dd5e26ed73bdd4ee01f13f488f829eb8",
+      "public_sha256": "878093de576556fc239b1b301d492532dd5e26ed73bdd4ee01f13f488f829eb8",
+      "original_bytes": 2436,
+      "public_bytes": 2436,
+      "public_export_change": null
+    },
+    "frontend-src/src/DatasetList.tsx": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/DatasetList.tsx",
+      "original_sha256": "6a0a31dd6c3dd6ebd842aa150d3dfb085a7c40de52f39fb65ec45acaf657fdfe",
+      "public_sha256": "6a0a31dd6c3dd6ebd842aa150d3dfb085a7c40de52f39fb65ec45acaf657fdfe",
+      "original_bytes": 8412,
+      "public_bytes": 8412,
+      "public_export_change": null
+    },
+    "frontend-src/src/Help.tsx": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/Help.tsx",
+      "original_sha256": "b8d7a312e9c1caecbf8a005038b610af9268c70865ac90af5552c512868c4ee3",
+      "public_sha256": "b8d7a312e9c1caecbf8a005038b610af9268c70865ac90af5552c512868c4ee3",
+      "original_bytes": 6576,
+      "public_bytes": 6576,
+      "public_export_change": null
+    },
+    "frontend-src/src/Sidebar.tsx": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/Sidebar.tsx",
+      "original_sha256": "4f36dd2bf531bf1a225fe5f813760a256bbeeb55191985876149deafc8f377fc",
+      "public_sha256": "4f36dd2bf531bf1a225fe5f813760a256bbeeb55191985876149deafc8f377fc",
+      "original_bytes": 5670,
+      "public_bytes": 5670,
+      "public_export_change": null
+    },
+    "frontend-src/src/api.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/api.ts",
+      "original_sha256": "b7b001142f2011de4cbd0087259d91f924041ceef0a374b267bc0cc347d7c123",
+      "public_sha256": "b7b001142f2011de4cbd0087259d91f924041ceef0a374b267bc0cc347d7c123",
+      "original_bytes": 3776,
+      "public_bytes": 3776,
+      "public_export_change": null
+    },
+    "frontend-src/src/canvas-graph.d.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/canvas-graph.d.ts",
+      "original_sha256": "50daee3cc606c2fb8bc4a291b56e58d0d672886f2f5e1fa75d9e10bc9f3aff6c",
+      "public_sha256": "50daee3cc606c2fb8bc4a291b56e58d0d672886f2f5e1fa75d9e10bc9f3aff6c",
+      "original_bytes": 1014,
+      "public_bytes": 1014,
+      "public_export_change": null
+    },
+    "frontend-src/src/canvas-graph.js": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/canvas-graph.js",
+      "original_sha256": "dc5ab8b5aa6f729592ed7f92dd93fbc835680cff19040bdbe006623cf0abe7dc",
+      "public_sha256": "dc5ab8b5aa6f729592ed7f92dd93fbc835680cff19040bdbe006623cf0abe7dc",
+      "original_bytes": 71417,
+      "public_bytes": 71417,
+      "public_export_change": null
+    },
+    "frontend-src/src/catalogue-format.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/catalogue-format.ts",
+      "original_sha256": "c96e9acfa4d7d15f20bad7607fce2e4947b6afbb9ebb67b7c65bb591fb7194cc",
+      "public_sha256": "c96e9acfa4d7d15f20bad7607fce2e4947b6afbb9ebb67b7c65bb591fb7194cc",
+      "original_bytes": 1689,
+      "public_bytes": 1689,
+      "public_export_change": null
+    },
+    "frontend-src/src/chat-result.js": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/chat-result.js",
+      "original_sha256": "7e2b7ae29b476acb191d7aa7915a7495658de015392bf1abf2268f390ed1f5a1",
+      "public_sha256": "7e2b7ae29b476acb191d7aa7915a7495658de015392bf1abf2268f390ed1f5a1",
+      "original_bytes": 4905,
+      "public_bytes": 4905,
+      "public_export_change": null
+    },
+    "frontend-src/src/guide-copy.json": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/guide-copy.json",
+      "original_sha256": "2b954b90b2d4f0ebf88db2f0b2695fa39aa4cd9a24fa8d4d1aa24bd15aa4662b",
+      "public_sha256": "2b954b90b2d4f0ebf88db2f0b2695fa39aa4cd9a24fa8d4d1aa24bd15aa4662b",
+      "original_bytes": 4983,
+      "public_bytes": 4983,
+      "public_export_change": null
+    },
+    "frontend-src/src/guide-place.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/guide-place.ts",
+      "original_sha256": "4a55a9de51f606d1f312c99eb43245e85e35e549b0b8022265067d295b24c4ac",
+      "public_sha256": "4a55a9de51f606d1f312c99eb43245e85e35e549b0b8022265067d295b24c4ac",
+      "original_bytes": 1102,
+      "public_bytes": 1102,
+      "public_export_change": null
+    },
+    "frontend-src/src/i18n-core.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/i18n-core.ts",
+      "original_sha256": "e0d63a4baccb231814328b0579863c1a721469a18355d665e7e53e3b2b41d264",
+      "public_sha256": "e0d63a4baccb231814328b0579863c1a721469a18355d665e7e53e3b2b41d264",
+      "original_bytes": 3633,
+      "public_bytes": 3633,
+      "public_export_change": null
+    },
+    "frontend-src/src/icons.tsx": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/icons.tsx",
+      "original_sha256": "d01da8419cffa1cecc37607f199200722ff16fcf8c290b777a976f8565d5f916",
+      "public_sha256": "d01da8419cffa1cecc37607f199200722ff16fcf8c290b777a976f8565d5f916",
+      "original_bytes": 2159,
+      "public_bytes": 2159,
+      "public_export_change": null
+    },
+    "frontend-src/src/intros.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/intros.ts",
+      "original_sha256": "ea95e9850ff68544be0dc18c0f3c40ca445a9bfc09f3e8054ae16cc733717e38",
+      "public_sha256": "ea95e9850ff68544be0dc18c0f3c40ca445a9bfc09f3e8054ae16cc733717e38",
+      "original_bytes": 2088,
+      "public_bytes": 2088,
+      "public_export_change": null
+    },
+    "frontend-src/src/locale.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/locale.ts",
+      "original_sha256": "a45f44715f73f5de1c90e5483eba402b17e6b84d0897701045012f50ab557454",
+      "public_sha256": "a45f44715f73f5de1c90e5483eba402b17e6b84d0897701045012f50ab557454",
+      "original_bytes": 284,
+      "public_bytes": 284,
+      "public_export_change": null
+    },
+    "frontend-src/src/main.tsx": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/main.tsx",
+      "original_sha256": "51fc5ff454d2d1a021b10e64dbf2707f9644ce8be3ff49686483e8b88fd60f27",
+      "public_sha256": "51fc5ff454d2d1a021b10e64dbf2707f9644ce8be3ff49686483e8b88fd60f27",
+      "original_bytes": 156,
+      "public_bytes": 156,
+      "public_export_change": null
+    },
+    "frontend-src/src/styles.css": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/styles.css",
+      "original_sha256": "19e2a85304aaac19015a5fa6cbb404019f5126886288bbbfd9d8a88c6ad42cf6",
+      "public_sha256": "19e2a85304aaac19015a5fa6cbb404019f5126886288bbbfd9d8a88c6ad42cf6",
+      "original_bytes": 44494,
+      "public_bytes": 44494,
+      "public_export_change": null
+    },
+    "frontend-src/src/translations.json": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/translations.json",
+      "original_sha256": "26197ad4fa05a6f346afe478ee6e557188bac0daf38163faf32bd538ecf28668",
+      "public_sha256": "26197ad4fa05a6f346afe478ee6e557188bac0daf38163faf32bd538ecf28668",
+      "original_bytes": 173761,
+      "public_bytes": 173761,
+      "public_export_change": null
+    },
+    "frontend-src/src/types.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/types.ts",
+      "original_sha256": "49ad2b9a04c35eb6b3677ef2242f0499e1bcdcb3bbee6ed91020ed1243b1a452",
+      "public_sha256": "49ad2b9a04c35eb6b3677ef2242f0499e1bcdcb3bbee6ed91020ed1243b1a452",
+      "original_bytes": 2119,
+      "public_bytes": 2119,
+      "public_export_change": null
+    },
+    "frontend-src/src/vite-env.d.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/src/vite-env.d.ts",
+      "original_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "public_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "original_bytes": 38,
+      "public_bytes": 38,
+      "public_export_change": null
+    },
+    "frontend-src/tests/api.test.mjs": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/tests/api.test.mjs",
+      "original_sha256": "bf3a4ee5515ef3398dae5df5d7ead98d5b242fdc2a12c812fcd050e2dbc883e6",
+      "public_sha256": "bf3a4ee5515ef3398dae5df5d7ead98d5b242fdc2a12c812fcd050e2dbc883e6",
+      "original_bytes": 824,
+      "public_bytes": 824,
+      "public_export_change": null
+    },
+    "frontend-src/tests/catalogue-format.test.mjs": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/tests/catalogue-format.test.mjs",
+      "original_sha256": "3bed5e42d8e0cd4eba64469443e4ab7575e868664b077945b4439d99e29f6a60",
+      "public_sha256": "3bed5e42d8e0cd4eba64469443e4ab7575e868664b077945b4439d99e29f6a60",
+      "original_bytes": 1331,
+      "public_bytes": 1331,
+      "public_export_change": null
+    },
+    "frontend-src/tests/guide-place.test.mjs": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/tests/guide-place.test.mjs",
+      "original_sha256": "0b9af4db5a4111513f38c48e2e5aac7969c81d4a8d829d71b9c6e74af498afd8",
+      "public_sha256": "0b9af4db5a4111513f38c48e2e5aac7969c81d4a8d829d71b9c6e74af498afd8",
+      "original_bytes": 1644,
+      "public_bytes": 1644,
+      "public_export_change": null
+    },
+    "frontend-src/tsconfig.json": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/tsconfig.json",
+      "original_sha256": "9c3bbaa905310d78d0ae0e6d74755546de100419c84f17ba5b38afb17a8c38c2",
+      "public_sha256": "9c3bbaa905310d78d0ae0e6d74755546de100419c84f17ba5b38afb17a8c38c2",
+      "original_bytes": 400,
+      "public_bytes": 400,
+      "public_export_change": null
+    },
+    "frontend-src/vite.config.ts": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "frontend/vite.config.ts",
+      "original_sha256": "49abce6f84047645b369bfd9fcd625bda41ac1752ce39f9ab75217db45bc9b70",
+      "public_sha256": "49abce6f84047645b369bfd9fcd625bda41ac1752ce39f9ab75217db45bc9b70",
+      "original_bytes": 222,
+      "public_bytes": 222,
+      "public_export_change": null
+    },
+    "operations/dataieum-maintenance.service": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/dataieum-maintenance.service",
+      "original_sha256": "48af4c548008bfbf938785a3e4832c6324fce59b7a524e90851912ad623ba5a1",
+      "public_sha256": "48af4c548008bfbf938785a3e4832c6324fce59b7a524e90851912ad623ba5a1",
+      "original_bytes": 589,
+      "public_bytes": 589,
+      "public_export_change": null
+    },
+    "operations/dataieum-maintenance.timer": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/dataieum-maintenance.timer",
+      "original_sha256": "f237af45831d53156ef9a1a581498fb85843622169c8094516591294b7a18be6",
+      "public_sha256": "f237af45831d53156ef9a1a581498fb85843622169c8094516591294b7a18be6",
+      "original_bytes": 236,
+      "public_bytes": 236,
+      "public_export_change": null
+    },
+    "operations/dataieum-refresh.service": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/dataieum-refresh.service",
+      "original_sha256": "d6629c0d1ea3bcbba583137af18e01a18b59b5228879bb2d9ec7102d00a7665f",
+      "public_sha256": "d6629c0d1ea3bcbba583137af18e01a18b59b5228879bb2d9ec7102d00a7665f",
+      "original_bytes": 444,
+      "public_bytes": 444,
+      "public_export_change": null
+    },
+    "operations/dataieum-refresh.timer": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/dataieum-refresh.timer",
+      "original_sha256": "d205e67bbaa5ed68d16c4ef5f84c2f1698a96fd16f51c6296692ae4fff1f7a11",
+      "public_sha256": "d205e67bbaa5ed68d16c4ef5f84c2f1698a96fd16f51c6296692ae4fff1f7a11",
+      "original_bytes": 243,
+      "public_bytes": 243,
+      "public_export_change": null
+    },
+    "operations/tests/test_branding.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_branding.py",
+      "original_sha256": "e7868c7ad89446f461c464c6a4debf1f60cd98af47f676c5dee01861ef9fbee8",
+      "public_sha256": "6d075e6b64b0ab38b8d0aedc90ed736cc4d98d79c21fecce4ddbbd08fa1d6d58",
+      "original_bytes": 1951,
+      "public_bytes": 1943,
+      "public_export_change": "Loads discovery_harness/branding.py from this repository's layout instead of backend/discovery_harness/branding.py."
+    },
+    "operations/tests/test_ci_deploy.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_ci_deploy.py",
+      "original_sha256": "e407fac3f1dc429b86f49ebe55da4d20c5a554108183336619d41e1a445da400",
+      "public_sha256": "e407fac3f1dc429b86f49ebe55da4d20c5a554108183336619d41e1a445da400",
+      "original_bytes": 7866,
+      "public_bytes": 7866,
+      "public_export_change": null
+    },
+    "operations/tests/test_dataset_compare.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_dataset_compare.py",
+      "original_sha256": "e10665d01d876b9ed44fcd85700566d94e93ee687c5641feea49306c88fd7a93",
+      "public_sha256": "f37af4c42d58209e128b207cff81d2674cce26a1240bd0a2f38e364fc5790a6e",
+      "original_bytes": 6524,
+      "public_bytes": 6537,
+      "public_export_change": "The stub harness declares healthy=True because the snapshot's discovery_harness/http_api.py checks harness health before serving a read."
+    },
+    "operations/tests/test_deploy.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_deploy.py",
+      "original_sha256": "89a17f7b86e360509e9a2ebbf9222b7f2f4010524bd5c758c6f1efd303a58a86",
+      "public_sha256": "89a17f7b86e360509e9a2ebbf9222b7f2f4010524bd5c758c6f1efd303a58a86",
+      "original_bytes": 6616,
+      "public_bytes": 6616,
+      "public_export_change": null
+    },
+    "operations/tests/test_luna_network.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_luna_network.py",
+      "original_sha256": "5433b10c476f795797c1b2e91ba2b98b18e5f1c4b9254034162abd90269eeb57",
+      "public_sha256": "5433b10c476f795797c1b2e91ba2b98b18e5f1c4b9254034162abd90269eeb57",
+      "original_bytes": 2104,
+      "public_bytes": 2104,
+      "public_export_change": null
+    },
+    "operations/tests/test_manifest.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_manifest.py",
+      "original_sha256": "26c495b0b5669eb57b33576d0ee0456ce21d4bff8b57f6b5d75a27a346d06d21",
+      "public_sha256": "26c495b0b5669eb57b33576d0ee0456ce21d4bff8b57f6b5d75a27a346d06d21",
+      "original_bytes": 2146,
+      "public_bytes": 2146,
+      "public_export_change": null
+    },
+    "operations/tests/test_postgres_publication.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_postgres_publication.py",
+      "original_sha256": "2383a179ddba25d7277f89975456fcff9eb16c7e3c0be0e38b70fc92572cf33c",
+      "public_sha256": "2383a179ddba25d7277f89975456fcff9eb16c7e3c0be0e38b70fc92572cf33c",
+      "original_bytes": 8034,
+      "public_bytes": 8034,
+      "public_export_change": null
+    },
+    "operations/tests/test_release.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_release.py",
+      "original_sha256": "173f71fa7327824b9946e2d6835f892e304167a3f3db207b2e8ce7541b068218",
+      "public_sha256": "173f71fa7327824b9946e2d6835f892e304167a3f3db207b2e8ce7541b068218",
+      "original_bytes": 1457,
+      "public_bytes": 1457,
+      "public_export_change": null
+    },
+    "operations/tests/test_runtime.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_runtime.py",
+      "original_sha256": "6329289f7c4891569c706cafaab808a216f56825c1f57522052e577df455290b",
+      "public_sha256": "6329289f7c4891569c706cafaab808a216f56825c1f57522052e577df455290b",
+      "original_bytes": 16212,
+      "public_bytes": 16212,
+      "public_export_change": null
+    },
+    "operations/tests/test_transition_integrity.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_transition_integrity.py",
+      "original_sha256": "04d81543ab9650eb5a2fb1f0528a3cdfe5efb2606f734b09f031094db1be306e",
+      "public_sha256": "04d81543ab9650eb5a2fb1f0528a3cdfe5efb2606f734b09f031094db1be306e",
+      "original_bytes": 6065,
+      "public_bytes": 6065,
+      "public_export_change": null
+    },
+    "operations/tests/test_web_transition.py": {
+      "source_repository": "https://github.com/ManziGit/wanted",
+      "source_revision": "59d8f493e0e9be654adf74e1bfc499bc0d28aa6a",
+      "source_path": "operations/tests/test_web_transition.py",
+      "original_sha256": "988829cf9c34feaad47236731bdc55d6dbf3d25cf06c70c3a1c111c5499ec71d",
+      "public_sha256": "988829cf9c34feaad47236731bdc55d6dbf3d25cf06c70c3a1c111c5499ec71d",
+      "original_bytes": 6950,
+      "public_bytes": 6950,
+      "public_export_change": null
     }
   }
 }
